@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 3500
 console.log(process.env.NODE_ENV)
 
 connectDB()
-
+console.log("after db connection")
 app.use(logger)
 app.use(cors(corsOptions))
 app.use(express.json())
